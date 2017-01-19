@@ -1,0 +1,5 @@
+.idea/
+vendor/
+dump.xml
+iplist.txt
+roskomnadzor.log

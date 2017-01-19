@@ -1,0 +1,18 @@
+#!/usr/bin/env php
+<?php
+/**
+ * Created by Roquie.
+ * E-mail: roquie0@gmail.com
+ * GitHub: Roquie
+ * Date: 18/01/2017
+ */
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+
+$application = new Application('Roskomnadzor utility.', '0.1');
+
+$application->add(new \Roskomnadzor\Resolver\MainCommand());
+
+$application->run();
