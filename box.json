@@ -3,7 +3,11 @@
   "directories": [
     "src"
   ],
-  "files": ["LICENSE", "README"],
+  "files": [
+    "helpers.php",
+    "LICENSE.md",
+    "README.md"
+  ],
   "finder": [
     {
       "name": "*.php",

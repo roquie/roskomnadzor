@@ -16,8 +16,7 @@
     "pear/net_dns2": "^1.4"
   },
   "require-dev": {
-    "symfony/var-dumper": "^3.2",
-    "kherge/box": "^2.7"
+    "symfony/var-dumper": "^3.2"
   },
   "autoload": {
     "psr-4": {

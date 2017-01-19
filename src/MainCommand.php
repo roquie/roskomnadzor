@@ -39,13 +39,13 @@ class MainCommand extends Command
      */
     protected function configure()
     {
-        $path = __DIR__ . '/../';
+        $path = dirname(\Phar::running(false)) . '/';
 
         $this
             ->setName('dump:ip-list')
             ->setDescription('Создаёт файл со списком найденных IP-адресов.')
             ->addOption('log-disable', null, InputOption::VALUE_NONE, 'Отключает запись логов.')
-            ->addOption('logfile', null, InputOption::VALUE_OPTIONAL, 'Путь до файла с логами.', $path. 'roskomnadzor.log')
+            ->addOption('logfile', null, InputOption::VALUE_OPTIONAL, 'Путь до файла с логами.', $path . 'roskomnadzor.log')
             ->addOption(
                 'no-progress', 'fast',
                 InputOption::VALUE_NONE,
